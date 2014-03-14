@@ -1,0 +1,13 @@
+{
+  "server": "z14",
+  "servername": "z14.ade25.de",
+  "sites": [
+    {
+      "title": "base",
+      "type": "plone",
+      "port": "8401",
+      "url": "base.kreativkombinat.de"
+    },
+    
+  ]
+}

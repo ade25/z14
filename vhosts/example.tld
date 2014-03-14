@@ -19,7 +19,7 @@ server {
     root ${buildout:directory}/htdocs;
     index index.html index.htm;
 
-    gzip             on;    
+    gzip             on;
     gzip_min_length  1000;
     gzip_proxied     any;
     gzip_types   text/plain text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript;
