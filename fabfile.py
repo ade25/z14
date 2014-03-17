@@ -20,11 +20,11 @@ env.host_root = '/opt/sites'
 
 env.hosts = ['4zu1']
 env.hosted_sites = [
-    'example.tld',
+    'msc',
 ]
 
 env.hosted_sites_locations = [
-    '/opt/sites/example.tld/buildout.example.tld',
+    '/opt/sites/msc/buildout.msc',
 ]
 
 
