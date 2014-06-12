@@ -14,17 +14,31 @@ env.port = '22222'
 env.user = 'root'
 env.code_user = 'root'
 env.prod_user = 'www'
-env.webserver = '4zu1'
-env.code_root = '4zu1'
+env.webserver = '/opt/webserver/buildout.webserver'
+env.code_root = '/opt/webserver/buildout.webserver'
 env.host_root = '/opt/sites'
 
-env.hosts = ['4zu1']
+env.hosts = ['z14']
 env.hosted_sites = [
-    'msc',
+    'a-map',
+    'miamo',
+    'imu',
+    'steinacher',
+    'bail',
+    'arge',
+    'hermuth',
+    'multifloor'
 ]
 
 env.hosted_sites_locations = [
-    '/opt/sites/msc/buildout.msc',
+    '/opt/sites/a-map/buildout.a-map',
+    '/opt/sites/miamo/buildout.miamo',
+    '/opt/sites/imu/buildout.imu',
+    '/opt/sites/steinacher/buildout.steinacher',
+    '/opt/sites/bail/buildout.bail',
+    '/opt/sites/arge/buildout.arge',
+    '/opt/sites/hermuth/buildout.hermuth',
+    '/opt/sites/multifloor/buildout.multifloor',
 ]
 
 
@@ -54,7 +68,7 @@ def restart_haproxy():
 
 
 @task
-def supervisorctl(*cmd):
+def ctl(*cmd):
     """Runs an arbitrary supervisorctl command."""
     with cd(env.webserver):
         run('nice bin/supervisorctl ' + ' '.join(cmd))
