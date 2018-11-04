@@ -6,12 +6,6 @@
   "haproxy": "1.5-dev21",
   "sites": [
     {
-      "title": "${sites:zope1}",
-      "type": "plone",
-      "port": "${ports:zope1}",
-      "url": "${hosts:zope1}"
-    },
-    {
       "title": "${sites:zope9}",
       "type": "plone",
       "port": "${ports:zope9}",
